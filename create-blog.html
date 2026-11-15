@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlogSphere | Create Blog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>BlogSphere</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="create-blog.html">Create Blog</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="form-box" style="max-width: 650px;">
+      <h2>Publish a New Blog Post</h2>
+      <form onsubmit="handleCreateBlog(event)">
+        <label for="blog-title">Post Title</label>
+        <input type="text" id="blog-title" required placeholder="Enter article title" />
+
+        <label for="blog-author">Author Name</label>
+        <input type="text" id="blog-author" required placeholder="Your name" />
+
+        <label for="blog-content">Content</label>
+        <textarea id="blog-content" rows="6" required placeholder="Write your blog content here..."></textarea>
+
+        <button type="submit">Publish Blog</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
