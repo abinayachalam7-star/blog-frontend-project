@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlogSphere | Register</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>BlogSphere</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="form-box">
+      <h2>Create an Account</h2>
+      <form onsubmit="handleRegister(event)">
+        <label for="reg-name">Full Name</label>
+        <input type="text" id="reg-name" required placeholder="Enter your name" />
+
+        <label for="reg-email">Email Address</label>
+        <input type="email" id="reg-email" required placeholder="you@example.com" />
+
+        <label for="reg-pass">Password</label>
+        <input type="password" id="reg-pass" required placeholder="Create a password" />
+
+        <button type="submit" style="width: 100%;">Register</button>
+      </form>
+      <p style="margin-top: 1rem; text-align: center; font-size: 0.9rem;">
+        Already registered? <a href="login.html">Login here</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
