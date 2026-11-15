@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlogSphere | Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>BlogSphere</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="form-box">
+      <h2>Login to Your Account</h2>
+      <form onsubmit="handleLogin(event)">
+        <label for="login-email">Email Address</label>
+        <input type="email" id="login-email" required placeholder="you@example.com" />
+
+        <label for="login-pass">Password</label>
+        <input type="password" id="login-pass" required placeholder="••••••••" />
+
+        <button type="submit" style="width: 100%;">Login</button>
+      </form>
+      <p style="margin-top: 1rem; text-align: center; font-size: 0.9rem;">
+        Don't have an account? <a href="register.html">Register here</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
